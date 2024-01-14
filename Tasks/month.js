@@ -23,4 +23,4 @@ Month = (s) => {
   return -1;
 };
 
-module.exports = month;
+module.exports = Month;
