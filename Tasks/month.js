@@ -16,11 +16,9 @@ const months = [
 ];
 
 const getMonthIndex = (inputString) => {
-  l = months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(months[i])) return i + 1;
-  }
-  return -1;
+  const lowercasedInput = inputString.toLowerCase();
+  const index = months.findIndex(month => lowercasedInput.startsWith(month));
+  return index !== -1 ? index + 1 : -1;
 };
 
 module.exports = getMonthIndex;
