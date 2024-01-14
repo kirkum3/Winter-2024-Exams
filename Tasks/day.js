@@ -1,4 +1,5 @@
 // Get day number
+'use strict';
 
 let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -11,5 +12,4 @@ _parse_day_ = (s) => {
   }
   return -1;
 };
-
 module.exports = _parse_day_;
