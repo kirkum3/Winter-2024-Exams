@@ -1,8 +1,8 @@
 // Return an array without duplicates
 
-DISTINCT = (data) => {
-  A = new Set();
-  w = 0;
+const distinct = (data) => {
+  const A = new Set();
+  const w = 0;
   data.forEach((a) => {
     if (A.has(a)) {
       delete data[w];
@@ -15,4 +15,4 @@ DISTINCT = (data) => {
   (x => typeof x === 'number');
 };
 
-module.exports = DISTINCT;
+module.exports = distinct;
