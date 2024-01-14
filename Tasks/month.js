@@ -1,5 +1,5 @@
 // Get month number
-
+'use strict';
 Months = [
   'jan',
   'feb',
