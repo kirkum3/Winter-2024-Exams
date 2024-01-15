@@ -6,5 +6,4 @@ let splitArray = (index, array) => {
 
   return [begin, remaining];
 };
-
 module.exports = splitArray;
