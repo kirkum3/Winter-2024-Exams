@@ -2,7 +2,7 @@
 'use strict';
 let splitArray = (index, array) => {
   const begin = array.slice(0, index);
-  const remaining = array.slice(index, len);
+  const remaining = array.slice(index);
 
   return [begin, remaining];
 };
