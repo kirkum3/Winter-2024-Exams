@@ -1,5 +1,5 @@
 // Return an array without duplicates
-
+'use strict';
 const distinct = (data) => {
   const uniqueSet = new Set();
   const resultArray = [];
