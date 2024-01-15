@@ -1,6 +1,6 @@
 // Filter array by type name
 'use strict';
-Filter = (T, t) => {
+filterByType = (T, t) => {
   remove = [];
   for (C of T) {
     x = T.indexOf(C);
@@ -12,4 +12,4 @@ Filter = (T, t) => {
   return T;
 };
 
-module.exports = Filter;
+module.exports = filterByType;
