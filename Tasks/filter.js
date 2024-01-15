@@ -2,13 +2,13 @@
 'use strict';
 const filterByType = (arr, type) => {
   const indicesToRemove = [];
-  for (element of arr) {
-    index = arr.indexOf(element);
+  arr.forEach((element, index) => {
     if (typeof arr[index] !== type) {
-      remove.unshift(x);
+      indicesToRemove.unshift(index);
     }
-  }
-  for (index of indicesToRemove) arr.splice(index, 1);
+  });
+
+  indicesToRemove.forEach((index) => arr.splice(index, 1));
   return arr;
 };
 
